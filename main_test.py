@@ -3,6 +3,7 @@ import json
 from fastapi.testclient import TestClient
 from main import app
 
+client = TestClient(app)
 
 class TestApp(unittest.TestCase):
     def setUp(self):
